@@ -1,6 +1,8 @@
-var number = "";
-for (var i = 1 ; i <= 9; i++) {
-  number += i ;
+for (let i=1; i<=9; i++){
+  const number =[];
+  for (let j=1; j<=9; j++) {
+    number.push(i * j);
+  }
+console.log(number.join(" "));
 }
 
-console.log(number);
